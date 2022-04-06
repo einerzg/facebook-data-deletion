@@ -4,7 +4,9 @@ const router = new Router();
 
 router.post('/', async ctx => {
   try {
+    console.log(ctx)
     console.log(ctx.request)
+    console.log('-----------');
     ctx.body = 'OK';
   } catch (error) {
     console.log(error.message);

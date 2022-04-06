@@ -1,0 +1,12 @@
+{
+  "name": "facebook-data-deletion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:einerzg/facebook-data-deletion.git",
+  "author": "EinerZG <einer.zapata@moove-it.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1"
+  }
+}

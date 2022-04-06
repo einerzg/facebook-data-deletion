@@ -4,7 +4,6 @@ const faceDataDeletion = require('./components/faceDataDeletion');
 
 const app = new Koa();
 const v1Router = new Router({ prefix: '/v1' });
-const PORT = 4000;
 
 v1Router.use(async ctx => {
   ctx.body = 'Hello world';
@@ -12,4 +11,4 @@ v1Router.use(async ctx => {
 v1Router.use('/faceDataDeletion', faceDataDeletion.v1.routes());
 
 app.use(v1Router.routes());
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
